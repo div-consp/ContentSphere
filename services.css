@@ -1,0 +1,212 @@
+/* General styles for navigation bar */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #333;
+    padding: 15px 30px;
+}
+
+.navbar .logo h1 {
+    color: white;
+    font-size: 24px;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 30px;
+}
+
+.nav-links li a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+.nav-links li a:hover {
+    text-decoration: underline;
+}
+
+
+.services {
+    padding: 60px;
+    text-align: center;
+    background-color: #ffffff;
+}
+
+.services h1 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+.services p {
+    font-size: 18px;
+    max-width: 800px;
+    margin: 0 auto 40px;
+}
+
+.service {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 40px;
+}
+
+.service.reverse {
+    flex-direction: row-reverse;
+}
+
+.service-description {
+    flex: 1;
+    padding: 20px;
+}
+
+.service-description h2 {
+    font-size: 28px;
+    margin-bottom: 10px;
+}
+
+.service-description p {
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+.service-image {
+    flex: 1;
+}
+
+.service-image img {
+    width: 100%;
+    height: auto;
+    max-width: 300px; /* Set a max-width for the image */
+    border-radius: 8px;
+}
+
+
+/* Footer styles (same as on the home page) */
+.footer {
+    background-color: #333;
+    color: white;
+    padding: 40px 50px;
+}
+
+.footer-top {
+    text-align: center;
+    font-size: 40px;
+    margin-bottom: 20px;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: center;
+    gap: 100px;
+    align-items: flex-start;
+}
+
+.footer-left {
+    margin-right: auto;
+}
+
+.footer-left p {
+    font-size: 18px;
+    margin-bottom: 15px;
+}
+
+.social-icons {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.social-icons a img {
+    width: 30px;
+    height: 30px;
+    filter: invert(100%);
+}
+
+.footer-right {
+    margin-left: auto;
+}
+
+.footer-right h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.footer-right p {
+    font-size: 18px;
+    margin: 5px 0;
+}
+
+.footer-right p:last-child {
+    margin-top: 10px;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .footer-content {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footer-left, 
+    .footer-right {
+        margin: 0;
+        text-align: center;
+    }
+
+    .footer-right p {
+        text-align: center;
+    }
+}
+
+nav {
+    background-color: #333;
+    color: white;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav .logo {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    margin: 0;
+}
+
+nav ul li {
+    margin-left: 20px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+
+nav ul li a:hover,
+nav ul li a.active {
+    background-color: #555;
+}
+
+.hidden {
+    display: none;
+}
